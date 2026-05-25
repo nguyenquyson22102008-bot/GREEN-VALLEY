@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN VALLEY - Dụng Cụ</title>
+  <link rel="icon" type="image/jpeg" href="photo/anh/LOGO.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="css/dungcu.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="gv-wrap">
+    <nav class="gv-nav">
+      <a class="gv-logo" href="trangchu.html" aria-label="GREEN VALLEY">
+        <span class="gv-logo-img"><img src="photo/anh/LOGO.jpg" alt="GREEN VALLEY Logo" decoding="async"></span>
+        <span>GREEN VALLEY</span>
+      </a>
+      <button class="gv-menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="gv-nav-links">
+        <li><a href="trangchu.html">Trang Chủ</a></li>
+        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="tinhnang.html">Tính Năng</a></li>
+        <li><a href="loaicay.html">Loại Cây</a></li>
+        <li><a href="dungcu.html" class="active">Dụng Cụ</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+
+    <section class="gv-hero">
+      <p class="sub">Trang bị</p>
+      <h1>Dụng Cụ</h1>
+      <p class="gv-hero-copy">Thu thập và nâng cấp dụng cụ để trồng trọt, chiến đấu và bảo vệ nông trại trong GREEN VALLEY.</p>
+    </section>
+
+    <section class="gv-tools">
+      <div class="gv-container">
+        <div class="gv-tools-head">
+          <div>
+            <span class="gv-badge">Danh sách dụng cụ</span>
+            <h2>Chọn dụng cụ phù hợp cho hành trình của bạn</h2>
+            <p>Đầy đủ dụng cụ nông nghiệp, vũ khí và bộ giáp với chỉ số rõ ràng để người chơi dễ chọn theo từng giai đoạn.</p>
+          </div>
+          <div class="gv-tools-meta">
+            <div>
+              <strong>12</strong>
+              <span>dụng cụ</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>nhóm loại</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gv-tool-filters" aria-label="Lọc dụng cụ">
+          <button class="gv-filter-btn active" type="button" data-filter="all">Tất Cả</button>
+          <button class="gv-filter-btn" type="button" data-filter="farming">Nông Nghiệp</button>
+          <button class="gv-filter-btn" type="button" data-filter="weapons">Vũ Khí</button>
+          <button class="gv-filter-btn" type="button" data-filter="armor">Bộ Giáp</button>
+        </div>
+
+        <div class="gv-tool-grid">
+          <article class="gv-tool-card" data-type="farming">
+            <img class="gv-tool-image" src="photo/dungcu/xeng-xoi-dat.jpg" alt="Xẻng Xới Đất" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Xẻng Xới Đất</h2>
+              <p class="gv-tool-type">Nông Nghiệp</p>
+              <p>Dụng cụ cơ bản để xới đất, mở luống mới và chuẩn bị khu vực trồng cây.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 100 coin</span>
+                <span><i class="ti ti-trending-up"></i> +10% tốc độ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="farming">
+            <img class="gv-tool-image" src="photo/dungcu/binh-tuoi-nuoc.jpg" alt="Bình Tưới Nước" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Bình Tưới Nước</h2>
+              <p class="gv-tool-type">Nông Nghiệp</p>
+              <p>Giữ cây luôn đủ nước, giúp cây phát triển ổn định và giảm thời gian chăm sóc.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 150 coin</span>
+                <span><i class="ti ti-leaf"></i> +15% sinh trưởng</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="farming">
+            <img class="gv-tool-image" src="photo/dungcu/keo-cat-tia.jpg" alt="Kéo Cắt Tỉa" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Kéo Cắt Tỉa</h2>
+              <p class="gv-tool-type">Nông Nghiệp</p>
+              <p>Cắt tỉa cây lâu năm, tăng chất lượng hoa quả và điểm thu hoạch cuối mùa.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 220 coin</span>
+                <span><i class="ti ti-stars"></i> +20% chất lượng</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="farming">
+            <img class="gv-tool-image" src="photo/dungcu/binh-phun-bao-ve.jpg" alt="Bình Phun Bảo Vệ" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Bình Phun Bảo Vệ</h2>
+              <p class="gv-tool-type">Nông Nghiệp</p>
+              <p>Bảo vệ mùa vụ khỏi sâu bệnh và giữ năng suất ổn định trong thời tiết xấu.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 260 coin</span>
+                <span><i class="ti ti-shield-check"></i> +25% bảo vệ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="weapons">
+            <img class="gv-tool-image" src="photo/dungcu/kiem-thep.jpg" alt="Kiếm Thép" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Kiếm Thép</h2>
+              <p class="gv-tool-type">Vũ Khí</p>
+              <p>Vũ khí cận chiến dễ dùng, phù hợp để phòng thủ quanh nông trại đầu game.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 300 coin</span>
+                <span><i class="ti ti-flame"></i> +30 sát thương</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="weapons">
+            <img class="gv-tool-image" src="photo/dungcu/cung-san-xa.jpg" alt="Cung Săn Xa" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Cung Săn Xa</h2>
+              <p class="gv-tool-type">Vũ Khí</p>
+              <p>Tấn công từ khoảng cách an toàn, hiệu quả khi bảo vệ cổng thung lũng.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 460 coin</span>
+                <span><i class="ti ti-crosshair"></i> +50 chính xác</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="weapons">
+            <img class="gv-tool-image" src="photo/dungcu/sung-phong-luu.jpg" alt="Súng Phóng Lựu" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Súng Phóng Lựu</h2>
+              <p class="gv-tool-type">Vũ Khí</p>
+              <p>Gây sát thương diện rộng, thích hợp khi kẻ địch xuất hiện theo nhóm lớn.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 820 coin</span>
+                <span><i class="ti ti-explosion"></i> +100 diện rộng</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="weapons">
+            <img class="gv-tool-image" src="photo/dungcu/sung-truong-nang-luong.jpg" alt="Súng Trường Năng Lượng" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Súng Trường Năng Lượng</h2>
+              <p class="gv-tool-type">Vũ Khí</p>
+              <p>Tốc độ bắn cao, dành cho người chơi muốn tập trung vào chiến đấu FPS.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 1,200 coin</span>
+                <span><i class="ti ti-bolt"></i> +150 sát thương</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="armor">
+            <img class="gv-tool-image" src="photo/dungcu/ao-vai-da-ngoai.jpg" alt="Áo Vải Dã Ngoại" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Áo Vải Dã Ngoại</h2>
+              <p class="gv-tool-type">Bộ Giáp</p>
+              <p>Trang bị nhẹ giúp giảm sát thương khi khám phá các khu vực đầu game.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 200 coin</span>
+                <span><i class="ti ti-shield"></i> +15% phòng thủ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="armor">
+            <img class="gv-tool-image" src="photo/dungcu/giap-sat-canh-gac.jpg" alt="Giáp Sắt Canh Gác" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Giáp Sắt Canh Gác</h2>
+              <p class="gv-tool-type">Bộ Giáp</p>
+              <p>Tăng khả năng chống chịu trong những trận phòng thủ nông trại ban đêm.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 520 coin</span>
+                <span><i class="ti ti-shield-plus"></i> +40% phòng thủ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="armor">
+            <img class="gv-tool-image" src="photo/dungcu/giap-hoi-phuc.jpg" alt="Giáp Hồi Phục" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Giáp Hồi Phục</h2>
+              <p class="gv-tool-type">Bộ Giáp</p>
+              <p>Hồi một phần máu sau giao tranh, hữu ích khi đi xa khỏi căn cứ.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 980 coin</span>
+                <span><i class="ti ti-heart-plus"></i> +8 hồi phục</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-tool-card" data-type="armor">
+            <img class="gv-tool-image" src="photo/dungcu/mu-vuong-mien.jpg" alt="Mũ Vương Miện" loading="lazy" decoding="async">
+            <div class="gv-tool-card-content">
+              <h2>Mũ Vương Miện</h2>
+              <p class="gv-tool-type">Bộ Giáp</p>
+              <p>Trang bị hiếm nhất, tăng phòng thủ, may mắn và điểm thu hoạch.</p>
+              <div class="gv-tool-card-meta">
+                <span><i class="ti ti-coin"></i> 1,500 coin</span>
+                <span><i class="ti ti-sparkles"></i> +100% tổng lực</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="gv-footer">
+      <span>© 2026 GREEN VALLEY - All Rights Reserved</span>
+      <div><i class="ti ti-brand-facebook"></i><i class="ti ti-brand-youtube"></i><i class="ti ti-brand-discord"></i></div>
+    </footer>
+  </div>
+</body>
+</html>

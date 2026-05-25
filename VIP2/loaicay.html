@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN VALLEY</title>
+   <link rel="icon" type="image/jpeg" href="photo/anh/LOGO.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="css/loaicay.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="gv-wrap">
+    <nav class="gv-nav">
+      <a class="gv-logo" href="trangchu.html" aria-label="GREEN VALLEY">
+        <span class="gv-logo-img"><img src="photo/anh/LOGO.jpg" alt="GREEN VALLEY Logo" decoding="async"></span>
+        <span>GREEN VALLEY</span>
+      </a>
+      <button class="gv-menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="gv-nav-links">
+        <li><a href="trangchu.html">Trang Chủ</a></li>
+        <li><a href="gioithieu.html">Giới Thiệu</a></li>
+        <li><a href="tinhnang.html">Tính Năng</a></li>
+        <li><a href="loaicay.html" class="active">Loại Cây</a></li>
+        <li><a href="dungcu.html">Dụng Cụ</a></li>
+        <li><a href="lienhe.html">Liên Hệ</a></li>
+      </ul>
+    </nav>
+
+    <section class="gv-hero">
+      <p class="sub">Khám phá</p>
+      <h1>Các Loại Cây</h1>
+      <p class="gv-hero-copy">Trồng và chăm sóc nhiều giống cây để tạo nguồn tài nguyên cho thung lũng.</p>
+    </section>
+
+    <section class="gv-crops">
+      <div class="gv-container">
+        <div class="gv-crops-head">
+          <div>
+            <span class="gv-badge">Danh sách cây</span>
+            <h2>Chọn giống cây phù hợp cho nông trại của bạn</h2>
+            <p>Đầy đủ rau củ, hoa quả và cây cảnh với thời gian trồng nhanh, giá trị thu hoạch cao.</p>
+          </div>
+          <div class="gv-crops-meta">
+            <div>
+              <strong>16</strong>
+              <span>giống cây</span>
+            </div>
+            <div>
+              <strong>3</strong>
+              <span>nhóm loại</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="gv-crop-filters" aria-label="Lọc cây trồng">
+          <button class="gv-filter-btn active" type="button" data-filter="all">Tất Cả</button>
+          <button class="gv-filter-btn" type="button" data-filter="vegetables">Rau Xanh</button>
+          <button class="gv-filter-btn" type="button" data-filter="fruits">Hoa Quả</button>
+          <button class="gv-filter-btn" type="button" data-filter="flowers">Hoa Cảnh</button>
+        </div>
+
+        <div class="gv-crop-grid">
+          <!-- Rau Xanh -->
+          <article class="gv-crop-card" data-type="vegetables">
+            <img class="gv-crop-image" src="photo/hoaqua/cachua.jpg" alt="Cà Chua" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cà Chua</h2>
+              <p class="gv-crop-type">Rau Xanh</p>
+              <p>Cà chua giàu vitamin C, lý tưởng để bán hoặc chế biến thực phẩm.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="vegetables">
+            <img class="gv-crop-image" src="photo/hoaqua/raucai.jpg" alt="Rau Cải" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Rau Cải</h2>
+              <p class="gv-crop-type">Rau Xanh</p>
+              <p>Rau cải xanh giàu dinh dưỡng, tăng trưởng nhanh nhất trong nông trại.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 3 ngày</span>
+                <span><i class="ti ti-coin"></i> 15 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="vegetables">
+            <img class="gv-crop-image" src="photo/hoaqua/khoaitay.jpg" alt="Khoai Tây" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Khoai Tây</h2>
+              <p class="gv-crop-type">Rau Xanh</p>
+              <p>Khoai tây đa năng, có thể trồng theo mùa và cho doanh thu cao.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 7 ngày</span>
+                <span><i class="ti ti-coin"></i> 30 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="vegetables">
+            <img class="gv-crop-image" src="photo/hoaqua/hanhtay.jpg" alt="Hành Tây" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Hành Tây</h2>
+              <p class="gv-crop-type">Rau Xanh</p>
+              <p>Hành tây thơm ngon, bổ sung vitamin và tinh chất cần thiết cho nông dân.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 4 ngày</span>
+                <span><i class="ti ti-coin"></i> 18 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hoa Quả -->
+          <article class="gv-crop-card" data-type="fruits">
+            <img class="gv-crop-image" src="photo/hoaqua/dautay.jpg" alt="Dâu Tây" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Dâu Tây</h2>
+              <p class="gv-crop-type">Hoa Quả</p>
+              <p>Dâu tây tươi ngon, giá trị thị trường cao, được ưa chuộng.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 6 ngày</span>
+                <span><i class="ti ti-coin"></i> 40 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="fruits">
+            <img class="gv-crop-image" src="photo/hoaqua/cam.jpg" alt="Cam" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cam</h2>
+              <p class="gv-crop-type">Hoa Quả</p>
+              <p>Cam tươi giàu vitamin C, cho doanh thu cao khi thu hoạch.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 8 ngày</span>
+                <span><i class="ti ti-coin"></i> 50 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="fruits">
+            <img class="gv-crop-image" src="photo/hoaqua/chuoi.jpg" alt="Chuối" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Chuối</h2>
+              <p class="gv-crop-type">Hoa Quả</p>
+              <p>Chuối bổ dưỡng, dễ trồng, mang lại lợi nhuận ổn định cho nông trại.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 7 ngày</span>
+                <span><i class="ti ti-coin"></i> 35 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="fruits">
+            <img class="gv-crop-image" src="photo/hoaqua/nho.jpg" alt="Nho" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Nho</h2>
+              <p class="gv-crop-type">Hoa Quả</p>
+              <p>Nho lạ mắt với doanh thu cao nhất, yêu cầu chăm sóc kỹ lưỡng.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 9 ngày</span>
+                <span><i class="ti ti-coin"></i> 60 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Hoa Cảnh -->
+          <article class="gv-crop-card" data-type="flowers">
+            <img class="gv-crop-image" src="photo/hoaqua/hoahong.jpg" alt="Hoa Hồng" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Hoa Hồng</h2>
+              <p class="gv-crop-type">Hoa Cảnh</p>
+              <p>Hoa hồng đẹp lãng mạn, tô điểm thung lũng, giá bán cao.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 25 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="flowers">
+            <img class="gv-crop-image" src="photo/hoaqua/hoatulip.jpg" alt="Hoa Tulip" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Hoa Tulip</h2>
+              <p class="gv-crop-type">Hoa Cảnh</p>
+              <p>Hoa tulip sắc sảo, mang vẻ đẹp châu Âu đến thung lũng của bạn.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 4 ngày</span>
+                <span><i class="ti ti-coin"></i> 22 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="flowers">
+            <img class="gv-crop-image" src="photo/hoaqua/hoacuc.jpg" alt="Hoa Cúc" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Hoa Cúc</h2>
+              <p class="gv-crop-type">Hoa Cảnh</p>
+              <p>Hoa cúc rực rỡ, tăng trưởng nhanh, lý tưởng cho người mới bắt đầu.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 3 ngày</span>
+                <span><i class="ti ti-coin"></i> 18 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="flowers">
+            <img class="gv-crop-image" src="photo/hoaqua/hoasen.jpg" alt="Hoa Sen" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Hoa Sen</h2>
+              <p class="gv-crop-type">Hoa Cảnh</p>
+              <p>Hoa sen thánh thiêng, tăng trưởng cực nhanh, doanh thu khổng lồ.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 1 ngày</span>
+                <span><i class="ti ti-coin"></i> 108 coin</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <footer class="gv-footer">
+      <span>© 2026 GREEN VALLEY - All Rights Reserved</span>
+      <div><i class="ti ti-brand-facebook"></i><i class="ti ti-brand-youtube"></i><i class="ti ti-brand-discord"></i></div>
+    </footer>
+  </div>
+</body>
+</html>
