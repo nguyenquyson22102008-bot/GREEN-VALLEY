@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# Build artifacts (keep the bundle in git for deployment)
+# js/speed-insights.bundle.js is intentionally tracked
+
+# Package manager lockfiles
+package-lock.json
+
+# Environment variables
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
