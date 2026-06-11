@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quên Mật Khẩu</title>
+    <link rel="icon" type="image/png" href="/static/logo/logo.png?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/taikhoan/auth.css">
+    <link rel="stylesheet" href="/static/css/taikhoan/quenmatkhau.css">
+    <style>
+        /* CSS bổ trợ hiệu ứng xoay tròn động cho icon spinner */
+        .fa-spin {
+            animation: fa-spin 1s infinite linear;
+        }
+        @keyframes fa-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="form-container" id="forgetContainer">
+            <form id="forgetForm" novalidate>
+                <div class="otp-mark" aria-hidden="true">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h1>Nhận Mã OTP</h1>
+                <p class="form-subtitle">Nhập email tài khoản để nhận mã xác minh đổi mật khẩu.</p>
+                
+                <div class="input-group">
+                    <label for="forgetEmailInput" class="visually-hidden">Email</label>
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                    <input type="email" id="forgetEmailInput" name="email" placeholder="Nhập Email của bạn" required autocomplete="email" />
+                </div>
+
+                <p class="otp-note">
+                    <i class="fa-solid fa-clock"></i>
+                    Mã OTP có hiệu lực trong 5 phút.
+                </p>
+                
+                <div id="authAlert" class="auth-alert" aria-live="polite"></div>
+                
+                <button type="submit" id="submitBtn">
+                    <i class="fa-solid fa-paper-plane" id="submitIcon"></i>
+                    <span id="submitText">Gửi Mã OTP</span>
+                </button>
+                
+                <p class="auth-switch">
+                    <a href="/login" class="back-to-login">
+                        <i class="fa-solid fa-arrow-left"></i> Quay lại Đăng nhập
+                    </a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- 1. KHỞI TẠO CÁC PHẦN TỬ DOM ---
+            const forgetForm = document.getElementById('forgetForm');
+            const emailInput = document.getElementById('forgetEmailInput');
+            const alertBox = document.getElementById('authAlert');
+            const submitBtn = document.getElementById('submitBtn');
+            const submitText = document.getElementById('submitText');
+            const submitIcon = document.getElementById('submitIcon');
+
+            // --- 2. HÀM TIỆN ÍCH (UTILITIES) ---
+
+            // Quản lý hiển thị thông báo trạng thái
+            const showAlert = (message = '', type = '') => {
+                if (!message) {
+                    alertBox.textContent = '';
+                    alertBox.className = 'auth-alert';
+                    return;
+                }
+                alertBox.textContent = message;
+                alertBox.className = `auth-alert ${type}`;
+            };
+
+            // Xác thực dữ liệu Client đầu vào
+            const validateForm = (email) => {
+                if (!email) {
+                    return "Vui lòng nhập địa chỉ Email của bạn!";
+                }
+
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    return "Định dạng email không hợp lệ!";
+                }
+
+                return null; // Không phát hiện lỗi
+            };
+
+            // Quản lý trạng thái chờ gửi API (Loading State)
+            const setSubmittingState = (isSubmitting) => {
+                submitBtn.disabled = isSubmitting;
+                if (isSubmitting) {
+                    submitText.textContent = "Đang gửi...";
+                    submitIcon.className = "fa-solid fa-spinner fa-spin"; // Kèm class hiệu ứng xoay tròn
+                } else {
+                    submitText.textContent = "Gửi Mã OTP";
+                    submitIcon.className = "fa-solid fa-paper-plane";
+                }
+            };
+
+            // --- 3. LẮNG NGHE SỰ KIỆN (EVENT LISTENERS) ---
+
+            forgetForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                showAlert(); // Reset toàn bộ thông báo cũ
+
+                const email = emailInput.value.trim();
+
+                // Xác thực phía Client
+                const errorMessage = validateForm(email);
+                if (errorMessage) {
+                    showAlert(errorMessage, 'error');
+                    return;
+                }
+
+                // Chuyển nút bấm sang trạng thái loading
+                setSubmittingState(true);
+
+                try {
+                    // Gọi API Backend
+                    const response = await fetch('/api/forgot', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        // Đồng bộ tên thuộc tính payload truyền đi sang key dạng rút gọn
+                        body: JSON.stringify({ email })
+                    });
+
+                    const data = await response.json();
+
+                    if (response.ok && data.success) {
+                        // Lưu email tạm thời để phục vụ điền tự động ở màn hình reset mật khẩu kế tiếp
+                        localStorage.setItem('reset_email', email);
+
+                        showAlert(data.message || "Mã OTP đã được gửi! Đang chuyển hướng...", 'success');
+
+                        // Chuyển tiếp người dùng sang trang xử lý OTP sau 2 giây
+                        setTimeout(() => {
+                            window.location.href = '/reset';
+                        }, 2000);
+                    } else {
+                        showAlert(data.message || "Không thể gửi mã OTP. Vui lòng kiểm tra lại!", 'error');
+                        setSubmittingState(false);
+                    }
+                } catch (error) {
+                    console.error('Forgot Password Error:', error);
+                    showAlert("Không thể kết nối đến máy chủ. Vui lòng thử lại sau!", 'error');
+                    setSubmittingState(false);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

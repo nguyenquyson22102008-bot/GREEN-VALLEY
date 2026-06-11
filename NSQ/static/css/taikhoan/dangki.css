@@ -1,0 +1,18 @@
+:root {
+    --panel-min-height: 520px;
+}
+
+.container {
+    min-height: var(--panel-min-height);
+}
+
+.input-group {
+    margin-bottom: 16px;
+}
+
+@media (max-width: 520px) {
+    .container {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+}
