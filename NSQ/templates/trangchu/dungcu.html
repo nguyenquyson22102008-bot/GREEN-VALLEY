@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GREEN VALLEY</title>
+  <link rel="icon" type="image/jpeg" href="/photo/anh/LOGO.jpg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/tabler-icons.min.css">
+  <link rel="stylesheet" href="/static/css/trangchu/loaicay.css">
+  <link rel="stylesheet" href="/static/css/trangchu/site-effects.css">
+  <script src="/static/js/script.js" defer></script>
+</head>
+<body>
+  <div class="gv-wrap">
+    
+    <div class="gv-square-field" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <nav class="gv-nav">
+      <a class="gv-logo" href="/home" aria-label="GREEN VALLEY">
+        <span class="gv-logo-img"><img src="/photo/anh/LOGO.jpg" alt="GREEN VALLEY Logo" decoding="async"></span>
+        <span>GREEN VALLEY</span>
+      </a>
+      <button class="gv-menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="gv-nav-links">
+        <li><a href="/home">Trang Chủ</a></li>
+        <li><a href="/gioithieu">Giới Thiệu</a></li>
+        <li><a href="/tinhnang">Tính Năng</a></li>
+        <li><a href="/loaicay">Loại Cây</a></li>
+        <li><a href="/dongvat">Động Vật</a></li>
+        <li><a href="/dungcu" class="active">Dụng Cụ</a></li>
+        <li><a href="/lienhe">Liên Hệ</a></li>
+        <li><a href="/logout"><i class="ti ti-logout"></i> Đăng xuất</a></li>
+      </ul>
+    </nav>
+
+    <section class="gv-hero">
+      <p class="sub">Khám phá</p>
+      <h1>Các Loại Dụng Cụ & Trang Bị</h1>
+      <p class="gv-hero-copy">Trồng, chăm sóc và bảo vệ nông trại để tạo nguồn tài nguyên cho thung lũng.</p>
+    </section>
+
+    <section class="gv-crops">
+      <div class="gv-container">
+        <div class="gv-crops-head">
+          <div>
+            <span class="gv-badge">Danh sách trang bị</span>
+            <h2>Chọn công cụ phù hợp cho nông trại của bạn</h2>
+            <p>Đầy đủ dụng cụ, vũ khí và áo giáp với thời gian sử dụng lâu, hiệu suất cao.</p>
+          </div>
+          <div class="gv-crops-meta"></div>
+        </div>
+
+        <div class="gv-crop-filters" aria-label="Lọc vật phẩm">
+          <button class="gv-filter-btn active" type="button" data-filter="all">Tất Cả</button>
+          <button class="gv-filter-btn" type="button" data-filter="trangbi">Trang Bị</button>
+          <button class="gv-filter-btn" type="button" data-filter="vukhi">Vũ Khí</button>
+          <button class="gv-filter-btn" type="button" data-filter="dungcu">Dụng Cụ</button>
+        </div>
+
+        <div class="gv-crop-grid">         
+          <article class="gv-crop-card" data-type="trangbi">
+            <img class="gv-crop-image" src="/photo/dungcu/mu.png" alt="Giáp Mũ" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Giáp Mũ</h2>
+              <p class="gv-crop-type">Trang Bị</p>
+              <p>Giáp Mũ là trang bị bảo vệ đầu, giúp tăng sức mạnh và khả năng chịu đựng của nhân vật.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>         
+      
+          <article class="gv-crop-card" data-type="trangbi">
+            <img class="gv-crop-image" src="/photo/dungcu/aogiap.png" alt="Áo Giáp" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Áo Giáp</h2>
+              <p class="gv-crop-type">Trang Bị</p>
+              <p>Áo giáp là trang bị bảo vệ phần thân quan trọng, giúp tăng sức chịu đựng của nhân vật.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+        
+          <article class="gv-crop-card" data-type="trangbi">
+            <img class="gv-crop-image" src="/photo/dungcu/quan.png" alt="Quần" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Quần</h2>
+              <p class="gv-crop-type">Trang Bị</p>
+              <p>Quần là trang bị bảo vệ chân, giúp tăng sức mạnh và khả năng chịu đựng của nhân vật.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+       
+          <article class="gv-crop-card" data-type="trangbi">
+            <img class="gv-crop-image" src="/photo/dungcu/giay.png" alt="Giày" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Giày</h2>
+              <p class="gv-crop-type">Trang Bị</p>
+              <p>Giày là trang bị bảo vệ bàn chân, tăng tốc độ di chuyển và sức chịu đựng.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+      
+          <article class="gv-crop-card" data-type="trangbi">
+            <img class="gv-crop-image" src="/photo/dungcu/CanhThienThan.Png" alt="Cánh Thiên Thần" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cánh Thiên Thần</h2>
+              <p class="gv-crop-type">Trang Bị</p>
+              <p>Cánh Thiên Thần là trang bị đặc biệt, giúp nhân vật bay lượn và tăng các chỉ số phòng thủ.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+      
+          <article class="gv-crop-card" data-type="trangbi">
+            <img class="gv-crop-image" src="/photo/dungcu/VuongMiengVang.png" alt="Vương Miệng Vàng" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Vương Miệng Vàng</h2>
+              <p class="gv-crop-type">Trang Bị</p>
+              <p>Vương Miệng Vàng là biểu tượng của quyền lực, tăng mạnh các chỉ số tổng thể cho nhân vật.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="vukhi">
+            <img class="gv-crop-image" src="/photo/dungcu/kiem.png" alt="Kiếm" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Kiếm</h2>
+              <p class="gv-crop-type">Vũ Khí</p>
+              <p>Kiếm là vũ khí cận chiến cơ bản, cung cấp sát thương ổn định trong các cuộc chiến.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="vukhi">
+            <img class="gv-crop-image" src="/photo/dungcu/riu.png" alt="Rìu" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Rìu</h2>
+              <p class="gv-crop-type">Vũ Khí</p>
+              <p>Rìu là vũ khí cận chiến có sát thương lớn, đồng thời dùng để chặt cây hiệu quả.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="vukhi">
+            <img class="gv-crop-image" src="/photo/dungcu/cung.png" alt="Cung" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cung</h2>
+              <p class="gv-crop-type">Vũ Khí</p>
+              <p>Cung là vũ khí tầm xa, giúp bạn tấn công mục tiêu từ khoảng cách an toàn.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>          
+
+          <article class="gv-crop-card" data-type="vukhi">
+            <img class="gv-crop-image" src="/photo/dungcu/dinhba.png" alt="Đinh Ba" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Đinh Ba</h2>
+              <p class="gv-crop-type">Vũ Khí</p>
+              <p>Đinh Ba là vũ khí cận chiến dài, rất hữu ích để đâm và tấn công từ tầm trung.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="gv-crop-card" data-type="vukhi">
+            <img class="gv-crop-image" src="/photo/dungcu/thuong.png" alt="Thương" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Thương</h2>
+              <p class="gv-crop-type">Vũ Khí</p>
+              <p>Thương là vũ khí cận chiến linh hoạt, thích hợp để đối đầu với nhiều quái vật.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="gv-crop-card" data-type="vukhi">
+            <img class="gv-crop-image" src="/photo/dungcu/luoihai.png" alt="Lưỡi Hái" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Lưỡi Hái</h2>
+              <p class="gv-crop-type">Vũ Khí</p>
+              <p>Lưỡi Hái có đòn đánh diện rộng, vừa là vũ khí nguy hiểm vừa hỗ trợ gặt lúa nhanh chóng.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+          
+          <article class="gv-crop-card" data-type="dungcu">
+            <img class="gv-crop-image" src="/photo/dungcu/cup.png" alt="Cúp" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cúp</h2>
+              <p class="gv-crop-type">Dụng Cụ</p>
+              <p>Cúp (Cuốc chim) là công cụ chuyên dụng dùng để khai thác quặng và đập phá đất đá.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="dungcu">
+            <img class="gv-crop-image" src="/photo/dungcu/xeng.png" alt="Xẻng" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Xẻng</h2>
+              <p class="gv-crop-type">Dụng Cụ</p>
+              <p>Xẻng dùng để đào đất, tạo luống trồng cây và thu thập tài nguyên cát, sỏi.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="dungcu">
+            <img class="gv-crop-image" src="/photo/dungcu/cuoc.png" alt="Cuốc" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cuốc</h2>
+              <p class="gv-crop-type">Dụng Cụ</p>
+              <p>Cuốc là dụng cụ không thể thiếu của người nông dân, dùng để xới đất trồng trọt.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="dungcu">
+            <img class="gv-crop-image" src="/photo/dungcu/cancau.png" alt="Cần Câu" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Cần Câu</h2>
+              <p class="gv-crop-type">Dụng Cụ</p>
+              <p>Cần Câu được sử dụng để thư giãn câu cá và thu thập các vật phẩm quý hiếm dưới nước.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="dungcu">
+            <img class="gv-crop-image" src="/photo/dungcu/keocattia.png" alt="Kéo Cắt Tỉa" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Kéo Cắt Tỉa</h2>
+              <p class="gv-crop-type">Dụng Cụ</p>
+              <p>Kéo Cắt Tỉa dùng để chăm sóc, tỉa cành lá cho cây và thu hoạch một số nông sản.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="gv-crop-card" data-type="dungcu">
+            <img class="gv-crop-image" src="/photo/dungcu/binhtuoinuoc.png" alt="Bình Tưới Nước" loading="lazy" decoding="async">
+            <div class="gv-crop-card-content">
+              <h2>Bình Tưới Nước</h2>
+              <p class="gv-crop-type">Dụng Cụ</p>
+              <p>Bình Tưới Nước cung cấp độ ẩm cần thiết giúp cây trồng sinh trưởng khỏe mạnh mỗi ngày.</p>
+              <div class="gv-crop-card-meta">
+                <span><i class="ti ti-clock"></i> 5 ngày</span>
+                <span><i class="ti ti-coin"></i> 20 coin</span>
+              </div>
+            </div>
+          </article>
+          
+        </div> 
+      </div> 
+    </section> 
+
+    <footer class="gv-footer">
+      <span>© 2026 GREEN VALLEY - All Rights Reserved</span>
+      <div><i class="ti ti-brand-facebook"></i><i class="ti ti-brand-youtube"></i><i class="ti ti-brand-discord"></i></div>
+    </footer>
+  </div>
+</body>
+</html>
